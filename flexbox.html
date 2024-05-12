@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Cards</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .movie-card {
+            flex-basis: calc(33.33% - 20px);
+            background-color: #fff;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .movie-card img {
+            width: auto;
+            height: auto;
+        }
+
+        .movie-card h2 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .movie-card p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="movie-card">
+            <span class="picture"><img src="Sita-raman.jpeg" alt="Movie Poster"></span>
+            <h2>Movie Title : Sita-Raman</h2>
+            <p>Director: Hanu Raghavapudi </p>
+            <p>Year: 2023</p>
+        </div>
+        <div class="movie-card">
+            <span class="picture"><img src="charlie.jpeg" alt="Movie Poster"></span>
+            <h2>Movie Title : Charlie777</h2>
+            <p>Director: Martin prkkat</p>
+            <p>Year: 2022</p>
+        </div>
+        <div class="movie-card">
+            <span class="picture"><img src="RRR.jpeg" alt="Movie Poster"></span>
+            <h2>Movie Title : RRR</h2>
+            <p>Director: SS Rajamouli</p>
+            <p>Year: 2024</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
